@@ -1,4 +1,4 @@
-module chat-smart
+module github.com/maxwelbm/chatgptcli
 
 go 1.19
 

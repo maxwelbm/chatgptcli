@@ -1,4 +1,4 @@
-# This is an example .goreleaser.yml file with some sensible defaults.
+# This is an example .goreleaser.yml file with some sensible defaultse
 # Make sure to check the documentation at https://goreleaser.com
 before:
   hooks:
@@ -28,12 +28,11 @@ archives:
     - goos: windows
       format: zip
 brews:
-  - repository:
+  - name: chatgptcli 
+    homepage: https://github.com/maxwelbm/homebrew-tools
+    repository:
       owner: maxwelbm
-      name: chatgptcli 
-    name: chatgptcli 
-    homepage: https://github.com/maxwelbm/chatgptcli
-    folder: Formula
+      name: homebrew-tools
 checksum:
   name_template: 'checksums.txt'
 snapshot:

@@ -28,7 +28,7 @@ archives:
     - goos: windows
       format: zip
 brews:
-  - tap:
+  - repository:
       owner: maxwelbm
       name: chatgptcli 
     name: chatgptcli 

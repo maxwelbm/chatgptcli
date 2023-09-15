@@ -13,7 +13,6 @@ builds:
       - linux
       - windows
       - darwin
-
 archives:
   - format: tar.gz
     # this name template makes the OS and Arch compatible with the results of uname.
@@ -28,6 +27,17 @@ archives:
     format_overrides:
     - goos: windows
       format: zip
+brews:
+  - name: goreleaser-testing
+    homepage: https://github.com/maxwelbm/chatgptcli
+    tap:
+      owner: maxwelbm
+      name: homebrew-tools
+    install: |
+      bin.install "chatgptcli"
+      bash_completion.install "completions/chatgptcli.bash" => "chatgptcli"
+      zsh_completion.install "completions/chatgptcli.zsh" => "_chatgptcli"
+      fish_completion.install "completions/chatgptcli.fish" 
 checksum:
   name_template: 'checksums.txt'
 snapshot:

@@ -28,16 +28,12 @@ archives:
     - goos: windows
       format: zip
 brews:
-  - name: goreleaser-testing
-    homepage: https://github.com/maxwelbm/chatgptcli
-    tap:
+  - tap:
       owner: maxwelbm
-      name: homebrew-tools
-    install: |
-      bin.install "chatgptcli"
-      bash_completion.install "completions/chatgptcli.bash" => "chatgptcli"
-      zsh_completion.install "completions/chatgptcli.zsh" => "_chatgptcli"
-      fish_completion.install "completions/chatgptcli.fish" 
+      name: chatgptcli 
+    name: chatgptcli 
+    homepage: https://github.com/maxwelbm/chatgptcli
+    folder: Formula
 checksum:
   name_template: 'checksums.txt'
 snapshot:
